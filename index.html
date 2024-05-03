@@ -1,86 +1,454 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Portfolio" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />          
+    <script
+      src="https://kit.fontawesome.com/fa62c117c7.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Haritha K</title>
+  </head>
+  <body class="light" id="top">
+    <header class="header center">
+      <h3>
+        <a href="https://harithapbk.github.io" class="link"
+          >HK.</a
+        >
+      </h3>
 
-        <!--==================== UNICONS ====================-->
-        
-        
-        <!--==================== SWIPER CSS ====================-->
-        <link rel="stylesheet" href="">
-        
-        <!--==================== CSS ====================-->
-        <link rel="stylesheet" href="">
+      <nav class="nav center">
+        <ul class="nav__list center">
+          <!-- <li class="nav__list-item">
+            <a class="link link--nav" href="#education">Education</a>
+          </li> -->
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#projects">Projects</a>
+          </li>
+          <!-- <li class="nav__list-item">
+            <a class="link link--nav" href="#skills">Skills</a>
+          </li> -->
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#stack">Tech Stack</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#publications">Publications</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#contact">Contact</a>
+          </li>
+        </ul>
 
-        <title>Responsive Portfolio Website</title>
-    </head>
-    <body>
-        <!--==================== HEADER ====================-->
-        <header class="header" id="header">
-            
-        </header>
+        <button type="button" aria-label="toggle theme" class="btn btn--icon">
+          <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
+        </button>
 
-        <!--==================== MAIN ====================-->
-        <main class="main">
-            <!--==================== HOME ====================-->
-            <section class="home section" id="home">
-                
-            </section>
+        <button
+          type="button"
+          aria-label="toggle navigation"
+          class="btn btn--icon nav__hamburger"
+        >
+          <i aria-hidden="true" class="fas fa-bars"></i>
+        </button>
+      </nav>
+    </header>
 
-            <!--==================== ABOUT ====================-->
-            <section class="about section" id="about">
-                
-            </section>
+    <main>
+      <!-- About -->
+      <div class="about center">
+        <h1>Hi, I am <span class="about__name">Haritha K.</span></h1>
+        <h2 class="about__role">Data Science Enthusiast.</h2>
+        <p class="about__desc">
+          Enthusiastic researcher with over 6 years of experience in Artificial Intelligence and Data Science. Specializing in big
+          data analytics, machine learning, data mining, predictive analytics, and cognitive computing. Also, equipped with
+          10 months of industrial experience in advanced AI technologies such as Generative AI models (e.g., Large Language
+          Models - LLMs, Retrieval-Augmented Generation - RAG) and expertise in Big Data Technologies like Apache Spark,
+          Hive, Hadoop, as well as web development tools like Django. Demonstrated success in developing and implementing
+          ML/DL models to address complex challenges and drive innovation.
+        </p>
 
-            <!--==================== SKILLS ====================-->
-            <section class="skills section" id="skills">
+        <div class="about__contact center">
+          <a href="resume.pdf">
+            <span class="btn btn--outline">Resume</span>
+          </a>
 
-            </section>
+          <!-- <a
+            href="https://github.com/rajshekhar26"
+            aria-label="github"
+            class="link link--icon"
+          >
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
 
-            <!--==================== QUALIFICATION ====================-->
-            <section class="qualification section">
+          <a
+            href="https://linkedin.com/in/rajshekhar26"
+            aria-label="linkedin"
+            class="link link--icon"
+          >
+            <i aria-hidden="true" class="fab fa-linkedin"></i>
+          </a> -->
+        </div>
+      </div>
 
-            </section>
+      <!-- Education -->
+      <!-- <section id="education" class="section education">
+        <h2 class="section__title">Education</h2>
+          <div class="education-container">            
+            <p><strong>Cochin University of Science and Technology</strong><br>
+            <code>2017-2024*</code><br>
+            <em>Doctor of Philosophy in Data Science(ABD)</em></p>
+          </div>
+          <div class="education-container">    
+            <p><strong>Cochin University of Science and Technology</strong><br>
+            <code>2014-2017</code><br>
+            <em>Master of Computer Applications</em></p>
+          </div>
+          <div class="education-container">    
+            <p><strong>Amrita School of Arts and Sciences</strong><br>
+            <code>2011-2014</code><br>
+            <em>Bachelor of Computer Applications</em></p>
+          </div>
+      </section> -->
 
-            <!--==================== SERVICES ====================-->
-            <section class="services section" id="services">
-                
-            </section>
+      <!-- Projects -->
+      <!-- <section id="projects" class="section projects">
+        <h2 class="section__title">Projects</h2>
 
-            <!--==================== PORTFOLIO ====================-->
-            <section class="portfolio section" id="portfolio">
-                
-            </section>
+        <div class="projects__grid">
+          <div class="project">
+            <h3>112 call service - Analytics Dashboard for all States in India (CDAC)</h3>
+            <p class="project__description">
+              • Contributed to the development of a nationwide 112 call service Analytics Dashboard using Python, Plotly,
+              folium, HTML, CSS, Django, and pandas.
+              • Utilized TensorFlow, Scikit-learn, Python, and Django Rest-API to assist in building crime pattern predictive
+              models based on geographic data.
+              • Collaborated with stakeholders to define analytical needs, integrate data sources, and deliver real-time visual-
+              izations for emergency service administrators.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Python</li>
+              <li class="project__stack-item">HTML</li>
+              <li class="project__stack-item">CSS</li>
+              <li class="project__stack-item">Django</li>
+              <li class="project__stack-item">pandas</li>
+              <li class="project__stack-item">plotly</li>
+              <li class="project__stack-item">folium</li>
+              <li class="project__stack-item">scikit-learn</li>
+              <li class="project__stack-item">TensorFlow</li>
+            </ul>
 
-            <!--==================== PROJECT IN MIND ====================-->
-            <section class="project section">
+            <a
+              href="https://github.com"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://example.com"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
 
-            </section>
+          <div class="project">
+            <h3>Project 2</h3>
+            <p class="project__description">
+              Ipsum accusamus ea excepturi aliquid eligendi amet. Explicabo
+              sapiente debitis labore sed ipsam Mollitia repellat illum quod
+              unde beatae Quis
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">SASS</li>
+              <li class="project__stack-item">TypeScript</li>
+              <li class="project__stack-item">React</li>
+            </ul>
 
-            <!--==================== TESTIMONIAL ====================-->
-            <section class="testimonial section">
-                
-            </section>
+            <a
+              href="https://github.com"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://example.com"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
 
-            <!--==================== CONTACT ME ====================-->
-            <section class="contact section" id="contact">
+          <div class="project">
+            <h3>Project 3</h3>
+            <p class="project__description">
+              Ipsum accusamus ea excepturi aliquid eligendi amet. Explicabo
+              sapiente debitis labore sed ipsam Mollitia repellat illum quod
+              unde beatae Quis
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">SASS</li>
+              <li class="project__stack-item">TypeScript</li>
+              <li class="project__stack-item">React</li>
+            </ul>
 
-            </section>
-        </main>
+            <a
+              href="https://github.com"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://example.com"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
 
-        <!--==================== FOOTER ====================-->
-        <footer class="footer">
-         
-        </footer>
-        
-        <!--==================== SCROLL TOP ====================-->
-        
+          <div class="project">
+            <h3>Project 4</h3>
+            <p class="project__description">
+              Ipsum accusamus ea excepturi aliquid eligendi amet. Explicabo
+              sapiente debitis labore sed ipsam Mollitia repellat illum quod
+              unde beatae Quis
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">SASS</li>
+              <li class="project__stack-item">TypeScript</li>
+              <li class="project__stack-item">React</li>
+            </ul>
 
-        <!--==================== SWIPER JS ====================-->
-        <script src=""></script>
+            <a
+              href="https://github.com"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://example.com"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </div>
+      </section> -->
 
-        <!--==================== MAIN JS ====================-->
-        <script src=""></script>
-    </body>
+      <section id="projects" class="section project">
+        <h2 class="section__title">Projects</h2>
+  
+        <div class="project-container">
+          <img src="./assets/images/muvee.jpg" alt="muvee" />
+  
+          <div class="project-content">
+            <h3>112 ERSS Analytics Dashboard(CDAC)</h3>
+            <p style="text-align: justify;">
+              Developed a nationwide 112 call service Analytics Dashboard using Python, Plotly, folium, HTML, CSS, Django, and pandas. Built crime pattern predictive models with TensorFlow, Scikit-learn, Python, and Django Rest-API. Collaborated on defining needs, integrating data, and providing real-time visualizations for emergency service administrators.
+            </p>
+  
+            <ul class="project-skill">
+              <li>Python</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Django</li>
+              <li>pandas</li>
+              <li>plotly</li>
+              <li>folium</li>
+              <li>scikit-learn</li>
+              <li>TensorFlow</li>
+            </ul>
+  
+            <!-- <ul class="project-link">
+              <li>
+                <a
+                  href="https://github.com/rajshekhar26/muvee"
+                  aria-label="Source code"
+                  target="_blank"
+                  title="source code"
+                  rel="noopener"
+                  ><i class="icon-border fas fa-code"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://muvee.onrender.com"
+                  aria-label="Preview"
+                  target="_blank"
+                  title="preview"
+                  rel="noopener"
+                  ><i
+                    aria-hidden="true"
+                    class="icon-border fas fa-external-link-alt"
+                  ></i
+                ></a>
+              </li>
+            </ul> -->
+          </div>
+        </div>
+        <div class="project-container">
+          <img src="./assets/images/route.jpg" alt="cleanfolio" />
+  
+          <div class="project-content">
+            <h3>Police Patrol Route prediction(CDAC)</h3>
+            <p>Implemented patrol route optimization based on predicted crime hotspots using Evolutionary Algorithms, geopandas, and the shapely library. Utilized GPU for accelerated processing of route optimization and waypoint assignment based on hotspots.</p>
+  
+            <ul class="project-skill">
+              <li>Python</li>
+              <li>geopandas</li>
+              <li>scikit-learn</li>
+              <li>shapely</li>
+            </ul>
+          </div>
+        </div>
+        <div class="project-container">
+          <img src="./assets/images/bda.jpg" alt="cleanfolio" />
+  
+          <div class="project-content">
+            <h3>End-to-end big data analytics pipeline (CDAC)</h3>
+            <p>Established a comprehensive big data pipeline for ingesting, processing, and analyzing data from the 112 service. Leveraged PostgreSQL, Apache NiFi, Apache Kafka, Apache Spark, Hadoop HDFS, and Hive for data processing and analytics.</p>
+  
+            <ul class="project-skill">
+              <li>Pyspark</li>
+              <li>Hadoop</li>
+              <li>Apache NiFi</li>
+              <li>Hive</li>
+              <li>Kafka</li>
+            </ul>
+          </div>
+        </div>
+        <div class="project-container">
+          <img src="./assets/images/llm.jpg" alt="cleanfolio" />
+  
+          <div class="project-content">
+            <h3>Natural Language queries to SQL(CDAC)</h3>
+            <p>Implemented a natural language query interface for generating SQL-based 112 Analytics reports. Leveraged Ollama and Llama2 LLM models to convert user's natural language queries into SQL queries, allowing users to interactively create reports.</p>
+  
+            <ul class="project-skill">
+              <li>Python</li>
+              <li>Ollama</li>
+              <li>Llama2</li>
+              <li>TensorFlow</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Publications -->
+      <section id="publication" class="section publication">
+        <h2 class="section__title">Publications</h2>
+          <div class="publication-container">            
+            <p><a href ="https://doi.org/10.3390/a15100383">Haritha, K.; Judy, M.V.; Papageorgiou, K.; Georgiannis, V.C.; Papageorgiou, E. <strong>Distributed Fuzzy Cognitive Maps for Feature Selection in Big Data Classification</strong>. <em> Algorithms 2022</em>, 15, 383.</a></p>
+          </div>
+          <div class="publication-container">            
+            <p><a href ="https://doi.org/10.3390/app13158735">K., Haritha, Judy M. V., Konstantinos Papageorgiou, and Elpiniki Papageorgiou. 2023. <strong>Distributed Genetic Algorithm for Community Detection in Large Graphs with a Parallel Fuzzy Cognitive Map for Focal Node Identification</strong> <em>Applied Sciences 13</em>, no. 15: 8735</a></p>
+          </div>
+          <div class="publication-container">            
+            <p><a href ="https://doi.org/10.1038/s41598-023-37540-z">Haritha, K., Shailesh, S., Judy, M.V. et al. <strong>A novel neural network model with distributed evolutionary approach for big data classification</strong>. <em>Scintific Reports 13</em>, 11052 (2023).</a></p>
+          </div>
+          <div class="publication-container">            
+            <p><a href ="https://doi.org/10.1007/978-981-99-1051-9_13">Haritha, K., Judy, M.V. (2023). <strong>Performance Analysis of Distributed Algorithms for Big Data Classification.</strong> In: Venkataraman, N., Wang, L., Fernando, X., Zobaa, A.F. (eds) Big Data and Cloud Computing. ICBCC 2022. <em>Lecture Notes in Electrical Engineering, vol 1021</em>. Springer, Singapore.</a></p>
+          </div>
+          <div class="publication-container">            
+            <p><a href ="https://doi.org/10.1007/978-981-15-6584-7_39">Haritha, K., Judy, M.V. (2021). <strong>Fuzzy Cognitive Map-Based Genetic Algorithm for Community Detection.</strong> In: Panigrahi, C.R., Pati, B., Mohapatra, P., Buyya, R., Li, KC. (eds) Progress in Advanced Computing and Intelligent Engineering. <em>Advances in Intelligent Systems and Computing, vol 1198. Springer, Singapore.</em></a></p>
+          </div>
+      </section>
+
+      <!-- Skills -->
+      <!-- <section class="section skills" id="skills">
+        <h2 class="section__title">Skills</h2>
+        <ul class="skills__list">
+          <li class="skills__list-item btn btn--plain">Machine Learning</li>
+          <li class="skills__list-item btn btn--plain">Deep Learning</li>
+          <li class="skills__list-item btn btn--plain">Big Data Analytics</li>
+          <li class="skills__list-item btn btn--plain">Feature engineering</li>
+          <li class="skills__list-item btn btn--plain">Feature selection and extraction</li>
+          <li class="skills__list-item btn btn--plain">Data visualization</li>
+          <li class="skills__list-item btn btn--plain">Distributed Computing</li>
+        </ul>
+      </section> -->
+
+      <!--Technology Stack-->
+      <section id="stack" class="section stack">
+        <h2 class="section__title">Tech Stack</h2>
+        <div class="stack-container">
+          <div class="tech-container"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/hadoop/hadoop-original.svg" width="50" height="50" />Hadoop</div>
+          <div class="tech-container"><i class="devicon-apachespark-original colored"></i> Spark</div>
+          <div class="tech-container"><img src="imgs/hive.png" height="50"/>Apache Hive</div>
+          <div class="tech-container"><img src="imgs/nifi.png"height="50"/>Apache NiFi</div>
+          <div class="tech-container"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" height="50" /></i> Python</div>
+          <div class="tech-container"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg" height="50"/></i> scikit-learn</div>        
+          <div class="tech-container"><i class="devicon-tensorflow-original colored"></i>Tensorflow</div>
+          <div class="tech-container"><i class="devicon-keras-plain colored"></i>Keras</div>
+          <div class="tech-container"><i class="devicon-jupyter-plain-wordmark colored"></i> Jupyter Notebook</div>
+          <div class="tech-container"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/visualstudio/visualstudio-original.svg" height="50"/></i> Visual Studio</div>
+          <div class="tech-container"><i class="devicon-mongodb-plain colored"></i> MongoDB</div>
+          <div class="tech-container"><i class="devicon-postgresql-plain-wordmark colored"></i> PostgreSQL</div>
+          <div class="tech-container"><i class="devicon-django-plain"></i>Django</div>
+          <div class="tech-container"><i class="devicon-html5-plain colored"></i> HTML</div>
+          <div class="tech-container"><i class="devicon-css3-plain colored"></i> CSS</div>
+          <div class="tech-container"><i class="devicon-javascript-plain colored"></i> JavaScript</div>
+          <div class="tech-container"><i class="devicon-git-plain colored"></i> Git</div>
+          <div class="tech-container"><i class="devicon-subversion-plain colored"></i> Svn</div>
+          <div class="tech-container"><i class="devicon-linux-plain"></i> Linux</div>
+          <div class="tech-container"><i class="devicon-docker-plain colored"></i> Docker</div>
+          <div class="tech-container"><i class="devicon-bash-plain"></i>Bash</div>
+          <div class="tech-container"><i class="devicon-nano-plain colored"></i> Nano</div>
+          <div class="tech-container"><img src="imgs/qgis.png" height="50"/> QGIS</div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="section contact center" id="contact">
+        <h2 class="section__title">Get In Touch</h2>
+        <!-- <a href="mailto:haritha.kaladharan68@gmail.com">
+          <span class="btn btn--outline">Email me</span>
+        </a> -->
+
+        <ul>
+          <li><a href="mailto:haritha.kaladharan68@gmail.com"><span class="btn btn--outline"><i aria-hidden="true"
+                  class="fas icon fa-envelope"></i>&nbsp;Email</span></a></li>
+          <li><a href="https://github.com/harithapbk" aria-label="Github"><span class="btn btn--outline"><i aria-hidden="true"
+                  class="fab icon fa-github"></i> &nbsp;Github</span></a></li>
+          <li><a href="https://www.linkedin.com/in/harithakaladharan/" aria-label="Linkedin"><span class="btn btn--outline"><i aria-hidden="true"
+                  class="fab icon fa-linkedin"></i> &nbsp;Linkedin</span></a></li>
+          <!-- <li><a href="https://www.twitter.com/therajshekharr" aria-label="Twitter"><span class="btn"><i aria-hidden="true"
+                  class="fab icon fa-twitter"></i> Twitter</span></a></li> -->
+        </ul>
+
+      </section>
+    </main>
+
+
+    <footer class="footer">
+      <p>Copyright © 2024 K Haritha. All Rights Reserved.</p>
+    </footer>
+
+    <div class="scroll-container">
+    <div class="scroll-top">
+      <a aria-label="Scroll up" href="#top">
+        <i aria-hidden="true" class="fas fa-arrow-up"></i>
+      </a>
+    </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
 </html>
